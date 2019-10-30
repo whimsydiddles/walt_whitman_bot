@@ -27,5 +27,6 @@ while True:
     if len(postthis) <= 280:
         api.update_status(status=postthis)
         print postthis
-        #time.sleep(3600) NOTE: not using time.sleep while hosting through glitch.com & cron-job.org.
+        #time.sleep(3600) 
+	#NOTE: not using time.sleep while hosting through glitch.com & cron-job.org.
 
