@@ -1,5 +1,13 @@
 import random, time, tweepy
 
+from os import environ
+from flask import Flask
+
+app = Flask(__name__)
+app.run(environ.get('PORT'))
+
+app.run(host= '0.0.0.0', port=environ.get('PORT'))
+
 CONSUMER_KEY = 'Wgtyo7nAmSt6JxpvAR5kyUvAV'
 CONSUMER_SECRET = 'zYGQ41czCmMbXjHHvCx7aiWWmuk8T2pPRcMYgca3ZUpKPY35qK'
 ACCESS_KEY = '1189237778036547585-atr7slv7ikpus1jKImG8q1EFQdZq28'
